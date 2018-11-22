@@ -1,0 +1,113 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	background-color: #141414;
+	color: #fff;
+	text-align: center;
+	font-family: 'Play', sans-serif;
+}
+
+h1{
+	font-size: 55px;
+	margin-bottom: 0;
+}
+
+h3,h4{
+	color: #a2a2a2;
+}
+
+footer{
+	position: absolute;
+	bottom: 2%;
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+	outline: none;
+}
+
+a:hover{
+	color: #a2a2a2;
+}
+
+#info{
+	width: 65%;
+	min-height: 100vh;
+	background-color: #141414;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+
+#image{
+	width: 35%;
+	min-height: 100vh;
+	background-color: #144;
+	display: inline-block;
+	background-image: url('../imgs/rockets.jpg');
+	background-position: center center;
+	background-size: cover;
+}
+
+#counter-container{
+	position: absolute;
+	top: 40vh;
+	width: 95%;	
+	left: 5%;
+}
+
+.counter-values{
+	display: inline-block;
+	margin: 0 auto;
+	font-family: 'Orbitron', sans-serif;
+	width: 100px;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+
+#days{color:#0048BA;}
+#hours{color:#FDFF00;}
+#mins{color:#299617;}
+#secs{color:#FF7A00;}
+
+#credits, #contact, #language{
+	display: inline-block;
+	width: 30%;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+#credits{text-align: left;}
+#contact{
+	text-align: center;
+	font-size: 20px;
+}
+#language{text-align: right;}
+
+.counter-values div:nth-child(2) {
+    font-size:15px;
+    font-family: 'Play', sans-serif;
+}
+
+.selected-lang{
+	font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+    #info{
+        width: 100%;
+    }
+    #image{
+    	display: none;
+    }
+    .counter-values{
+		width: 24%;
+		font-size: 26px;
+	}
+	h1{
+		font-size: 45px;
+	}
+}
